@@ -1,0 +1,17 @@
+Korišten je SFML library, u slučaju da nemate to na računalu možete to skinuti na https://www.sfml-dev.org/download.php
+
+Vjerojatno ćete morati i prilagoditi neke stvari u projektu
+
+Project -> Project properties
+1	U gornjem lijevom kutu novog prozora pod configurations staviti all configurations
+	Zatim c/c++ -> general -> "additional include directories" te dodati adresu na "include" folder SFML biblioteke
+		izgledati ce npr. "D:\SFML\include"
+2	linker -> general > "additional library directories" dodati adresu na "lib" folder SFML biblioteke, slično kao u prvom primjeru
+3	input -> additional dependencies te dodati 
+		"sfml-main-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;sfml-network-d.lib" bez navodnih znakova
+
+pritom obratite pažnju da imate odgovarajuću verziju SFML biblioteke
+
+također ako iz nekog razloga fileovu nisu u folderu rješenja, možete ih kopirati iz foldera sfml/bin
+
+lijep pozdrav
